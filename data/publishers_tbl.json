@@ -1,5 +1,5 @@
 {
-	"Publishers":	{
+	"Publishers_tbl":	{
 		"id": "The Publishers primary key",
 		"name": "The name of the publishing company",
 		"addr1": "address line 1 of the publisher",

@@ -15,21 +15,21 @@ class Datainfo  {
 
 	public function getAuthorsSchema()  {
 		// http://localhost:8888/?controller=datainfo&action=getAuthorsSchema
-		$string = file_get_contents(DATA_PATH . "/authors.json");
+		$string = file_get_contents(DATA_PATH . "/authors_tbl.json");
 		$Authors = json_decode($string, true);
 		return $Authors;
 	}
 
 	public function getBooksSchema()  {
 		// http://localhost:8888/?controller=datainfo&action=getBooksSchema
-		$string = file_get_contents(DATA_PATH . "/books.json");
+		$string = file_get_contents(DATA_PATH . "/books_tbl.json");
 		$Books = json_decode($string, true);
 		return $Books;
 	}
 
 	public function getPublishersSchema()  {
 		// http://localhost:8888/?controller=datainfo&action=getPublishersSchema
-		$string = file_get_contents(DATA_PATH . "/publishers.json");
+		$string = file_get_contents(DATA_PATH . "/publishers_tbl.json");
 		$Publishers = json_decode($string, true);
 		return $Publishers;
 	}

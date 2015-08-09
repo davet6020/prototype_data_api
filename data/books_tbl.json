@@ -1,5 +1,5 @@
 {
-	"Books":	{
+	"Books_tbl":	{
 		"id": "Book primary key",
 		"genre": "Primary genre of this Book",
 		"title": "The title of this book",

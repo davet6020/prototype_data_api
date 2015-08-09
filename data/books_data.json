@@ -1,0 +1,60 @@
+{
+	"Books_data":	{
+		"1": {
+			"id": "1",
+			"genre": "Teen fiction",
+			"title": "The Tower Treasure",
+			"year": "1927",
+			"authorid": "1",
+			"publisherid": "2"
+		},
+		"2": {
+			"id": "2",
+			"genre": "Teen fiction",
+			"title": "The Shore Road Mystery",
+			"year": "1928",
+			"authorid": "1",
+			"publisherid": "2"
+		},
+		"3": {
+			"id": "3",
+			"genre": "Teen fiction",
+			"title": "What Happened At Midnight",
+			"year": "1931",
+			"authorid": "1",
+			"publisherid": "2"
+		},
+		"4": {
+			"id": "4",
+			"genre": "Teen fantasy",
+			"title": "Harry Potter and the Philosopher's Stone",
+			"year": "1998",
+			"authorid": "2",
+			"publisherid": "1"
+		},
+		"5": {
+			"id": "5",
+			"genre": "Teen fantasy",
+			"title": "Harry Potter and the Prisoner of Azkaban",
+			"year": "1999",
+			"authorid": "2",
+			"publisherid": "1"
+		},
+		"6": {
+			"id": "6",
+			"genre": "Teen fantasy",
+			"title": "Harry Potter and the Order of the Phoenix",
+			"year": "2003",
+			"authorid": "2",
+			"publisherid": "1"
+		},
+		"7": {
+			"id": "7",
+			"genre": "Teen fiction",
+			"title": "The Secret of Shadow Ranch",
+			"year": "1955",
+			"authorid": "3",
+			"publisherid": "2"
+		}		
+	}
+}

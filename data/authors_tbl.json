@@ -1,5 +1,5 @@
 {
-	"Authors":	{
+	"Authors_tbl":	{
 		"id": "Author primary key",
 		"first_name": "Authors first name and/or middle initial",
 		"last_name": "Authors last name",
