@@ -1,0 +1,10 @@
+{
+	"Books":	{
+		"id": "Book primary key",
+		"genre": "Primary genre of this Book",
+		"title": "The title of this book",
+		"year": "The year this book was published",
+		"authorid": "The id of the Author",
+		"publisherid": "The id of the Primary publisher this author uses"
+	}
+}

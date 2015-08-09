@@ -1,0 +1,9 @@
+{
+	"Authors":	{
+		"id": "Author primary key",
+		"first_name": "Authors first name and/or middle initial",
+		"last_name": "Authors last name",
+		"genre": "Primary genre of this Author",
+		"publisherid": "The id of the Primary publisher this author uses"
+	}
+}
