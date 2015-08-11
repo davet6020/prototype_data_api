@@ -12,4 +12,20 @@ This particular example has six .json files:
 	publishers_tbl		- column names of the publishers table
 	tablelist					- list of the three tables in the system.  used in a drop down list
 
+<<<<<<< HEAD
+=======
+This is an improved version over v1.  The following are enhancements:
+
+  -- Added a router
+  -- Transparent file listing (The API posts the results of the files in /data and doesn't care about the method name)
+  -- Doc root displays contents of all json files.
+
+TODOs
+-----
+
+1.) Add a config file
+2.) Add a View
+3.) Add in a Model
+4.) Add Create, Update and Delete methods
+>>>>>>> 069cd9c4aefd00748aa13baa2e8e0db538fae72b
 

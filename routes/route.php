@@ -31,6 +31,9 @@ class Route 	{
 		}
 
 		// Otherwise, handle the request or lack of request here.
+		// $uriGetParam = isset($_GET['uri']) ? '/' . $_GET['uri'] : '/';
+		$uriGetParam = isset($_GET['uri']) ? $_GET['uri'] : '/';
+
 		if($uriGetParam == '/')	{
 				$result = $data::allData();
 		} else 	{
