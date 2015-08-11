@@ -1,0 +1,14 @@
+{
+	"Authors": {
+		"Authors.id": "Books.authorid",
+		"Authors.publisherid": "Publishers.id"
+	},
+	"Books": {
+		"Books.authorid": "Authors.id",
+		"Books.publisher.id": "Publishers.id"
+	},
+	"Publishers": {
+		"Publishers.id": "Authors.publisherid",
+		"Publisher.id": "Books.publisher.id"
+	}
+}

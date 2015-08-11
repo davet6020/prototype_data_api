@@ -1,0 +1,9 @@
+{
+	"Comparisons":	{
+		"<": "Less than",
+		">": "Greater than",
+		"=": "Equal to",
+		"<>": "Not-equal to",
+		"LIKE": "Like the value"
+	}
+}

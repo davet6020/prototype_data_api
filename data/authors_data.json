@@ -1,0 +1,25 @@
+{
+	"Authors_data":	{
+		"1": {
+			"id": "1",
+			"first_name": "Franklin W.",
+			"last_name": "Dixon",
+			"genre": "Teen fiction",
+			"publisherid": "2"
+		},
+		"2": {
+			"id": "2",
+			"first_name": "J. K.",
+			"last_name": "Rowling",
+			"genre": "Teen fantasy",
+			"publisherid": "1"
+		},
+		"3": {
+			"id": "3",
+			"first_name": "Carolyn",
+			"last_name": "Keene",
+			"genre": "Teen fiction",
+			"publisherid": "2"
+		}
+	}
+}

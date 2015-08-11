@@ -1,0 +1,12 @@
+{
+	"Publishers_tbl":	{
+		"id": "The Publishers primary key",
+		"name": "The name of the publishing company",
+		"addr1": "address line 1 of the publisher",
+		"addr2": "address line 2 of the publisher",
+		"city": "city of the publisher",
+		"state": "state of the publisher",
+		"zip": "zip code  of the publisher",
+		"genre": "Primary genre of this Publisher"
+	}
+}

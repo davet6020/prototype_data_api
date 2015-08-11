@@ -1,0 +1,24 @@
+{
+	"Books_data":	{
+		"1": {
+			"id": "1",
+			"name": "Scholastic",
+			"addr1": "111 Street St.",
+			"addr2": "",
+			"city": "New York",
+			"state": "NY",
+			"zip": "60102",
+			"genre": "Teen fantasy"
+		},
+		"2": {
+			"id": "2",
+			"name": "Grosset & Dunlap",
+			"addr1": "4300 West Oak Court",
+			"addr2": "",
+			"city": "New York",
+			"state": "NY",
+			"zip": "60103",
+			"genre": "Teen fiction"
+		}	
+	}
+}
