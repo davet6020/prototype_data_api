@@ -1,51 +1,45 @@
 <?php
+
 class Datainfo  {
-	private $_params;
 
-	public function __construct($params)    {
-		$this->_params = $params;
-	}
-	
-	public function getTablesList()    {
-		// http://localhost:8888/?controller=datainfo&action=getTablesList
-		$string = file_get_contents(DATA_PATH . "/tablelist.json");
-		$Tables = json_decode($string, true);
-		return $Tables;
-	}
+	private $uriGetParam = null;
 
-	public function getAuthorsSchema()  {
-		// http://localhost:8888/?controller=datainfo&action=getAuthorsSchema
-		$string = file_get_contents(DATA_PATH . "/authors_tbl.json");
-		$Authors = json_decode($string, true);
-		return $Authors;
+	public function getData($uriGetParam)	{
+		if(file_exists(DATA_PATH . "/{$uriGetParam}.json"))	{
+				$string = file_get_contents(DATA_PATH . "/{$uriGetParam}.json");
+				$result = json_decode($string, true);
+		}	else 	{
+				$result = 'no such file exists.';
+		}
+		return $result;
 	}
 
-	public function getBooksSchema()  {
-		// http://localhost:8888/?controller=datainfo&action=getBooksSchema
-		$string = file_get_contents(DATA_PATH . "/books_tbl.json");
-		$Books = json_decode($string, true);
-		return $Books;
+
+	public function allData()	{
+		$doclist = [];
+		$result = [];
+
+		$files = scandir(DATA_PATH);	// Scan list of files in directory DATA_PATH
+
+		// Strip out . and .. from file listing
+		foreach($files as $file)	{
+			if ($file != "." && $file != "..") {
+				$doclist[] = $file;
+			}
+		}
+
+		// Build array of contents of all existing files in DATA_PATH
+		foreach($doclist as $doc)	{
+			if(file_exists(DATA_PATH . "/{$doc}"))	{
+					$string = file_get_contents(DATA_PATH . "/{$doc}");
+					$result[] = json_decode($string, true);
+			}	else 	{
+					$result = 'no such file exists.';
+			}
+		}
+
+		return $result;
 	}
 
-	public function getPublishersSchema()  {
-		// http://localhost:8888/?controller=datainfo&action=getPublishersSchema
-		$string = file_get_contents(DATA_PATH . "/publishers_tbl.json");
-		$Publishers = json_decode($string, true);
-		return $Publishers;
-	}
-
-	public function getJoins()  {
-		// http://localhost:8888/?controller=datainfo&action=getJoins
-		$string = file_get_contents(DATA_PATH . "/joins.json");
-		$Joins = json_decode($string, true);
-		return $Joins;
-	}
-
-	public function getWhereComparisons()	{
-		// http://localhost:8888/?controller=datainfo&action=getWhereComparisons
-		$string = file_get_contents(DATA_PATH . "/comparisons.json");
-		$Comparisons = $Joins = json_decode($string, true);
-		return $Comparisons;
-	}
 
 }	// End of class Datainfo
