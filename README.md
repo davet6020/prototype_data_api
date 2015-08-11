@@ -17,7 +17,8 @@ This particular example has six .json files:
 This is an improved version over v1.  The following are enhancements:
 
   -- Added a router
-  -- Transparent file listing (The API posts the results of the files in /data and doesn't care about the method name)
+  -- Option to route files from /data with only the filename as the route
+  -- Option to add routes and view them as classes.
   -- Doc root displays contents of all json files.
 
 TODOs
